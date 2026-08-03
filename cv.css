@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.5;
+    padding: 30px 15px;
+}
+
+.resume-container {
+    max-width: 800px;
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.contact-info, .social-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.contact-info a, .social-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover, .social-info a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.icon {
+    font-style: normal;
+    margin-right: 4px;
+}
+
+.social-info .logo-icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 22px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.section:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.section h2 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.section p {
+    font-size: 13.5px;
+    color: #333;
+    text-align: justify;
+}
+
+/* Education Styling */
+.edu-item {
+    margin-bottom: 10px;
+}
+
+.edu-item:last-child {
+    margin-bottom: 0;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+    color: #333;
+}
+
+.institution {
+    font-weight: normal;
+}
+
+.year {
+    font-weight: normal;
+}
+
+.degree {
+    font-size:13px;
+    font-weight: bold;
+    color: #111;
+}
+
+/* Lists Styling */
+.skills-list, .cert-list, .project-desc {
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.skills-list li, .cert-list li, .project-desc li {
+    margin-bottom: 4px;
+    color: #333;
+}
+
+/* Skills Grid (Columns style) */
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.skills-grid ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    flex: 1;
+}
+
+.skills-grid li {
+    margin-bottom: 4px;
+    color: #333;
+}
+
+/* Specific Project Area Styling */
+
+.project-item {
+    margin-bottom: 15px
+}
+
+
+.project-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: baseline; 
+    margin-bottom: 2px;
+}
+
+
+.project-title {
+    font-weight: bold;
+    color: #111;
+    font-size: 13px;
+}
+
+
+.project-year {
+    font-weight: normal; 
+    color: #333;
+    font-size: 13px;
+}
+
+
+.project-tech {
+    font-size: 13px;
+    color: #444; 
+    margin-bottom: 4px; 
+}
+
+
+.project-desc {
+    padding-left: 20px; 
+    font-size: 13px;
+    color: #333;
+}
+
+.project-desc li {
+    margin-bottom: 3px;
+}
+
+/* Languages Styling */
+.languages-list {
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    color: #333;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 600px) {
+    .contact-info, .social-info, .skills-grid, .edu-header, .project-header, .languages-list {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .resume-container {
+        padding: 20px;
+    }
+}
